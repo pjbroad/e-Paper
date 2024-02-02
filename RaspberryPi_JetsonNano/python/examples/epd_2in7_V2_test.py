@@ -145,6 +145,7 @@ try:
     time.sleep(2)
 
     logging.info("Clear...")
+    epd.init()   
     epd.Clear()
     logging.info("Goto Sleep...")
     epd.sleep()
@@ -154,5 +155,5 @@ except IOError as e:
     
 except KeyboardInterrupt:    
     logging.info("ctrl + c:")
-    epd2in7.epdconfig.module_exit()
+    epd2in7_V2.epdconfig.module_exit(cleanup=True)
     exit()

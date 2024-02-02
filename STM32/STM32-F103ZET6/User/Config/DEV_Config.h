@@ -66,6 +66,7 @@
 **/
 #define EPD_RST_PIN     RST_GPIO_Port, RST_Pin
 #define EPD_DC_PIN      DC_GPIO_Port, DC_Pin
+#define EPD_PWR_PIN     PWR_GPIO_Port, PWR_Pin
 #define EPD_CS_PIN      SPI_CS_GPIO_Port, SPI_CS_Pin
 #define EPD_BUSY_PIN    BUSY_GPIO_Port, BUSY_Pin
 
@@ -81,6 +82,7 @@
 #define DEV_Delay_ms(__xms) HAL_Delay(__xms);
 
 void DEV_SPI_WriteByte(UBYTE value);
+void DEV_SPI_Write_nByte(UBYTE *value, UDOUBLE len);
 
 int DEV_Module_Init(void);
 void DEV_Module_Exit(void);

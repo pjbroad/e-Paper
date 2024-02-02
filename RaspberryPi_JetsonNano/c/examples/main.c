@@ -64,6 +64,9 @@ int main(void)
 #elif epd2in66b
     EPD_2in66b_test();
     
+#elif epd2in66g
+    EPD_2in66g_test();
+
 #elif epd2in7
     EPD_2in7_test();
     
@@ -87,6 +90,9 @@ int main(void)
     
 #elif epd2in9bV3
     EPD_2in9b_V3_test();
+
+#elif epd2in9bV4
+    EPD_2in9b_V4_test();
     
 #elif epd2in9d
     EPD_2in9d_test();
@@ -99,6 +105,9 @@ int main(void)
     
 #elif epd2in13V3
     EPD_2in13_V3_test();
+
+#elif epd2in13V4
+    EPD_2in13_V4_test();
     
 #elif epd2in13bc
     EPD_2in13bc_test();
@@ -111,6 +120,9 @@ int main(void)
     
 #elif epd2in13d
     EPD_2in13d_test();
+
+#elif epd2in13g
+    EPD_2in13g_test();
     
 #elif epd3in52
     EPD_3in52_test();
@@ -132,6 +144,9 @@ int main(void)
     
 #elif epd4in2bV2
     EPD_4in2b_V2_test();
+
+#elif epd4in26
+    EPD_4in26_test();
     
 #elif epd4in37b
     EPD_4in37b_test();
@@ -162,6 +177,8 @@ int main(void)
     
 #elif epd7in5V2
     EPD_7in5_V2_test();
+#elif epd7in5V2_old
+    EPD_7in5_V2_test_old();
     
 #elif epd7in5bc
     EPD_7in5bc_test();
@@ -178,8 +195,8 @@ int main(void)
 #elif epd10in2b
     EPD_10in2b_test();
     
-#elif epd13in3
-    EPD_13in3_test();
+#elif epd13in3k
+    EPD_13in3k_test();
 #else
     printf("Please specify the EPD model when making. \r\n");
     printf("Example: When you run the EPD_7in5_V2_test() program, input: sudo make clean && make EPD=epd7in5V2 \r\n");
